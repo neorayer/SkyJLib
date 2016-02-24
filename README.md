@@ -1,6 +1,6 @@
 # SkyJLib
 SkyJLib was the core javascript library for Skymiracle(R) commercial software products.
-It provided the total solutions, eg:
+The total solutions for :
 
 - Domain Model Design 
 - ORM Framework - like hibernate
@@ -12,5 +12,6 @@ It provided the total solutions, eg:
 - Transation
 - Dynamic Dependency Injection - like spring/strut
 - RESTful 
+- Utils
 
 
