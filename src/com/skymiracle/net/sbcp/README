@@ -1,0 +1,20 @@
+SBCP - Simple Binary Command Protocol
+
+Format
+	byte	1B	head tag
+	byte	1B	head cmd type tag
+	u_short	2B	data pkg len (head not included)	
+	byte[]	?B	data bytes
+	
+Type
+	单向接收 - client不对server发来的数据做任何回复。
+	单向发送 - server不对client发来的数据做任何回复。
+	server应答 - server不主动向client发送任何信息，server对client的任何信息都response。
+	client应答 - client不主动向server发送任何信息，client对server的任何信息都response。
+	双向异步 - client和server在任何情况都可以向对方发送数据。
+	
+最安全的方式
+	client的 send 和 recv在同一线程。
+	任何对话都以blockTalk()方式进行。
+	单向驱动。
+	

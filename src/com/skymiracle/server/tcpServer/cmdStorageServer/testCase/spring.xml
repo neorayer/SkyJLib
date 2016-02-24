@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.0.xsd">
+	<bean id="homeDirConfiger"
+		class="com.skymiracle.server.tcpServer.cmdStorageServer.accessor.HashedHomeDirConfiger">
+		<property name="hashDepth" value="3" />
+	</bean>
+
+	<bean id="StorageAccessorFactory"
+		class="com.skymiracle.server.tcpServer.cmdStorageServer.accessor.StorageAccessorFactory">
+		<property name="homeDirConfiger">
+			<ref local="homeDirConfiger" />
+		</property>
+		<property name="localRootPath" value="/wpx/storage/" />
+	</bean>
+
+	<bean id="StorageServer"
+		class="com.skymiracle.server.tcpServer.cmdStorageServer.CmdStorageServer">
+		<property name="name" value="RemoteStorageServer" />
+		<property name="port" value="6001" />
+		<property name="maxConn" value="256" />
+		<property name="shortConn" value="true" />
+		<property name="cmdTimeoutSeconds" value="15" />
+		<property name="saFactory">
+			<ref local="StorageAccessorFactory" />
+		</property>
+	</bean>
+
+</beans>

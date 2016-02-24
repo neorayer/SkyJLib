@@ -1,0 +1,21 @@
+Mdo - Meta Data Object - 
+MList - List<Mdo>
+Mdo的属性　field fieldName, fieldValue
+
+
+
+public void user_del (ActResult r) throw AppException, Exception{
+	$(User.class).del();
+}
+
+public void users (ActResult r) throw AppException, Exception{
+	List<User> users = UserX.findAll("createTime+");
+	
+	...
+}
+
+public void FrendOfUsers (ActResult r) throw AppException, Exception{
+	List<Friend> friends = FriendX.findBy("uid,status", $("uid"), Friend.STATUS_OPEN);
+
+	....	
+}

@@ -1,0 +1,4 @@
+LDAP_HOST_CONNECT_ERROR=无法连接LDAP目录服务器。
+LDAP_HOST_CONNECT_ERROR.INFO=可能原因：1）没有启动目录服务器；2）软件中的目录服务器访问配置信息有误。
+LDAP_BIND_FAILED=无法通过LDAP-BIND验证。
+LDAP_BIND_FAILED.INFO=请检查您的LDAP验证信息配置。

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.0.xsd">
+	<bean id="homeDirConfiger"
+		class="com.skymiracle.server.tcpServer.cmdStorageServer.accessor.HashedHomeDirConfiger">
+		<property name="hashDepth" value="3" />
+	</bean>
+
+	<bean id="StorageAccessorFactory"
+		class="com.skymiracle.server.tcpServer.cmdStorageServer.accessor.StorageAccessorFactory">
+		<property name="homeDirConfiger">
+			<ref local="homeDirConfiger" />
+		</property>
+		<property name="localRootPath" value="/wpx/storage/" />
+	</bean>
+
+	<bean id="StorageServer"
+		class="com.skymiracle.server.tcpServer.cmdStorageServer.CmdStorageServer">
+		<property name="name" value="RemoteStorageServer" />
+		<property name="port" value="6001" />
+		<property name="maxConn" value="256" />
+		<property name="shortConn" value="true" />
+		<property name="cmdTimeoutSeconds" value="15" />
+		<property name="saFactory">
+			<ref local="StorageAccessorFactory" />
+		</property>
+	</bean>
+
+	<bean id="AuthMailTest"
+		class="com.skymiracle.server.tcpServer.mailServer.testCase.AuthMailTest">
+	</bean>
+
+	<bean id="Pop3Server"
+		class="com.skymiracle.server.tcpServer.mailServer.Pop3.Pop3Server">
+		<property name="authMail">
+			<ref local="AuthMailTest" />
+		</property>
+		<property name="storageMailAccessorFactory">
+			<ref local="StorageAccessorFactory" />
+		</property>
+	</bean>
+	
+
+	<bean id="SmtpServer"
+		class="com.skymiracle.server.tcpServer.mailServer.Smtp.SmtpServer">
+		<property name="authMail">
+			<ref local="AuthMailTest" />
+		</property>
+		<property name="storageMailAccessorFactory">
+			<ref local="StorageAccessorFactory" />
+		</property>
+		<property name="addrBookFilter">
+			<bean
+				class="com.skymiracle.server.tcpServer.mailServer.testCase.WpxFilter">
+			</bean>
+		</property>
+		<property name="maxMessageSize" value="51200000" />
+		<property name="mailQueueManager">
+			<bean
+				class="com.skymiracle.server.tcpServer.mailServer.queue.MailQueueManager">
+				<property name="nativeLocalQueue">
+					<bean
+						class="com.skymiracle.server.tcpServer.mailServer.queue.NativeLocalQueue">
+					</bean>
+				</property>
+				<property name="nativeRemoteQueue">
+					<bean
+						class="com.skymiracle.server.tcpServer.mailServer.queue.NativeRemoteQueue">
+					</bean>
+				</property>
+				<property name="foreignQueue">
+					<bean
+						class="com.skymiracle.server.tcpServer.mailServer.queue.ForeignQueue">
+					</bean>
+				</property>
+				<property name="bounceToForeignQueue">
+					<bean
+						class="com.skymiracle.server.tcpServer.mailServer.queue.BounceToForeignQueue">
+					</bean>
+				</property>
+				<property name="bounceToNativeQueue">
+					<bean
+						class="com.skymiracle.server.tcpServer.mailServer.queue.BounceToNativeQueue">
+					</bean>
+				</property>
+			</bean>
+		</property>
+	</bean>
+
+	<bean id="LocalSmtpClient" class="com.skymiracle.client.tcpClient.smtpClient.SmtpClient">
+		<property name="helo" value="localhost" />
+	
+	</bean>
+
+</beans>

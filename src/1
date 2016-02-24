@@ -1,0 +1,10 @@
+rm -rf .//com/skymiracle/mdo3/DataNoderm -rf .class
+rm -rf .//com/skymiracle/mdo3/DataNodeAbsrm -rf .class
+rm -rf .//com/skymiracle/mdo3/FatherNotExistsExceptionrm -rf .class
+rm -rf .//com/skymiracle/mdo3/MdoAttributeSetrm -rf .class
+rm -rf .//com/skymiracle/mdo3/MdoStoragerm -rf .class
+rm -rf .//com/skymiracle/mdo3/Porm -rf .class
+rm -rf .//com/skymiracle/mdo3/RdbmsMdoStorageImplrm -rf .class
+rm -rf .//com/skymiracle/mdo3/TreeDataNoderm -rf .class
+rm -rf .//com/skymiracle/mdo3/TreeDataNodeAbsrm -rf .class
+rm -rf .//com/skymiracle/mdo3/TreeMdoStoragerm -rf .class

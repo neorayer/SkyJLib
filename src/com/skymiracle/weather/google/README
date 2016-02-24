@@ -1,0 +1,12 @@
+利用prototype和GOOGLE的weather api做天气预报
+想拿prototype练练手，就用prototype做个天气预报吧。
+Google Weather API 只支持美国地区使用邮政编码进行查询,例如:
+http://www.google.com/ig/api?hl=zh-cn&weather=94043
+(94043 为 山景城, 美国加州 的邮政编码)
+而除了美国以外的地区需要使用经纬度坐标作为参数才能执行 Google Weather API, 例如:
+http://www.google.com/ig/api?hl=zh-cn&weather=,,,30670000,104019996
+(30670000,104019996 为 成都, 中国大陆 的经纬度坐标)
+要其它地区的经纬度坐标,可以通过 Google API 提供的国家代码列表及相应的城市经纬度坐标列表可以查询到,以下是 Google API 提供的查询参数:
+http://www.google.com/ig/countries?output=xml&hl=zh-cn
+(查询 Google 所支持的所有国家的代码,并以 zh-cn 简体中文显示)
+http://www.google.com/ig/cities?output=xml&hl=zh-cn&country=cn

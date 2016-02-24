@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN" "http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+<beans>
+
+	<bean id="PortalRdbmsConf"
+		class="com.skymiracle.mdo4.confDao.RdbmsConf">
+		<property name="jdbcDriver" value="org.hsqldb.jdbcDriver" />
+		<property name="url"
+			value="jdbc:hsqldb:mem:aname" />
+		<property name="username" value="sa" />
+		<property name="password" value="" />
+	</bean>
+	
+	<bean id="ProxoolConnPool" class="com.skymiracle.mdo4.jdbcConnPool.ProxoolConnPool">
+		<property name="alias" value="property-test" />
+		<property name="propsPath" value="src/com/skymiracle/mdo4/testCase/proxool.props" />
+	</bean>
+	
+	<bean id="RdbmsDaoStorage"
+		class="com.skymiracle.mdo4.RdbmsDaoStorage">
+		<property name="rdbmsConf">
+			<ref local="PortalRdbmsConf" />
+		</property>
+		<property name="jdbcConnPool">
+			<ref local="ProxoolConnPool" />
+		</property>
+		<property name="daoCache" >
+			<bean class="com.skymiracle.mdo4.cache.DaoCacheJVM">
+			</bean>
+		</property>
+
+	</bean>
+	
+	<bean id="CaseService"
+		class="com.skymiracle.mdo4.testCase.CaseService" scope="prototype">
+		<property name="daoStorage">
+			<ref local="RdbmsDaoStorage" />
+		</property>
+	</bean>
+</beans>
+

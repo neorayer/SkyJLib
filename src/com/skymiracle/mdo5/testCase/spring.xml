@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN" "http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+<beans>
+
+	<bean id="ProxoolPool" class="com.skymiracle.mdo5.jdbcPool.ProxoolJdbcPool">
+		<property name="alias" value="property-test" />
+		<property name="propsPath" value="src/com/skymiracle/mdo5/testCase/proxool.props" />
+		<property name="jdbcDriver" value="org.h2.Driver" />
+		<property name="url"
+			value="jdbc:h2:mem:db_mdo5user" />
+		<property name="username" value="sa" />
+		<property name="password" value="" />
+	</bean>
+	<bean id="NoJdbcPool" class="com.skymiracle.mdo5.jdbcPool.NoJdbcPool">
+	</bean>
+	<bean id="DbcpPool" class="com.skymiracle.mdo5.jdbcPool.NoJdbcPool">
+		<property name="jdbcDriver" value="org.h2.Driver" />
+		<property name="url"
+			value="jdbc:h2:tcp://localhost/db_mdo5user" />
+		<property name="username" value="sa" />
+		<property name="password" value="" />
+	</bean>
+	
+	<bean id="Store"
+		class="com.skymiracle.mdo5.RdbmsStore">
+		<property name="jdbcPool">
+			<ref local="NoJdbcPool" />
+		</property>
+		<property name="mdoCache" >
+			<bean class="com.skymiracle.mdo5.cache.MdoCacheMemcached">
+				<property name="servers">
+					<list>  
+						<value>10.1.1.1:11211</value>  
+					</list>  
+				</property>
+			</bean>
+		</property>
+	</bean>
+
+	
+</beans>
+

@@ -1,0 +1,9 @@
+#
+#Wed Nov 19 10:12:05 CST 2008
+jdbc-property-test.proxool.driver-url=jdbc\:h2\:mem\:db_mdo5user
+jdbc-property-test.user=sa
+jdbc-property-test.proxool.house-keeping-test-sql=select CURRENT_DATE
+jdbc-property-test.proxool.alias=property-test
+jdbc-property-test.proxool.maximum-connection-count=200
+jdbc-property-test.password=
+jdbc-property-test.proxool.driver-class=org.h2.Driver

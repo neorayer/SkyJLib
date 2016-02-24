@@ -1,0 +1,11 @@
+#Thu Jan 05 14:31:06 EST 2012
+eclipse.preferences.version=1
+encoding//src/com/skymiracle/dict/DICT_GB2312.props=gb2312
+encoding//src/com/skymiracle/image/SkyImageImpl.java=UTF-8
+encoding//src/com/skymiracle/mime/ReportMimeCreater.java=UTF-8
+encoding//src/com/skymiracle/server/tcpServer/mailServer/AutoMailMaker.java=UTF-8
+encoding//src/com/skymiracle/util/CalendarUtil.java=UTF-8
+encoding//src/com/skymiracle/util/Charset.java=UTF-8
+encoding//src/com/skymiracle/util/Rfc2047Codec.java=UTF-8
+encoding//src/com/skymiracle/util/Tester.java=UTF-8
+encoding/<project>=UTF-8

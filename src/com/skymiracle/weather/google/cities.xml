@@ -1,0 +1,315 @@
+<?xml version="1.0"?>
+<xml_api_reply version="1">
+	<cities>
+		<city>
+			<name data="保定"/>
+			<latitude_e6 data="38849998"/>
+			<longitude_e6 data="115569999"/>
+		</city>
+		<city default="true" >
+			<name data="北京"/>
+			<latitude_e6 data="39930000"/>
+			<longitude_e6 data="116279998"/>
+		</city>
+		<city>
+			<name data="长春"/>
+			<latitude_e6 data="43900001"/>
+			<longitude_e6 data="125220001"/>
+		</city>
+		<city>
+			<name data="长沙"/>
+			<latitude_e6 data="28229999"/>
+			<longitude_e6 data="112870002"/>
+		</city>
+		<city>
+			<name data="成都"/>
+			<latitude_e6 data="30670000"/>
+			<longitude_e6 data="104019996"/>
+		</city>
+		<city>
+			<name data="大连"/>
+			<latitude_e6 data="38900001"/>
+			<longitude_e6 data="121629997"/>
+		</city>
+		<city>
+			<name data="福州"/>
+			<latitude_e6 data="26079999"/>
+			<longitude_e6 data="119279998"/>
+		</city>
+		<city>
+			<name data="阜阳"/>
+			<latitude_e6 data="32930000"/>
+			<longitude_e6 data="115830001"/>
+		</city>
+		<city>
+			<name data="赣州"/>
+			<latitude_e6 data="25850000"/>
+			<longitude_e6 data="114949996"/>
+		</city>
+		<city>
+			<name data="广州"/>
+			<latitude_e6 data="23129999"/>
+			<longitude_e6 data="113319999"/>
+		</city>
+		<city>
+			<name data="贵阳"/>
+			<latitude_e6 data="26579999"/>
+			<longitude_e6 data="106720001"/>
+		</city>
+		<city>
+			<name data="哈尔滨"/>
+			<latitude_e6 data="45750000"/>
+			<longitude_e6 data="126769996"/>
+		</city>
+		<city>
+			<name data="海口"/>
+			<latitude_e6 data="20030000"/>
+			<longitude_e6 data="110349998"/>
+		</city>
+		<city>
+			<name data="邯郸"/>
+			<latitude_e6 data="38029998"/>
+			<longitude_e6 data="114419998"/>
+		</city>
+		<city>
+			<name data="杭州"/>
+			<latitude_e6 data="30229999"/>
+			<longitude_e6 data="120169998"/>
+		</city>
+		<city>
+			<name data="合肥"/>
+			<latitude_e6 data="31870000"/>
+			<longitude_e6 data="117230003"/>
+		</city>
+		<city>
+			<name data="菏泽"/>
+			<latitude_e6 data="36119998"/>
+			<longitude_e6 data="114370002"/>
+		</city>
+		<city>
+			<name data="衡阳"/>
+			<latitude_e6 data="36119998"/>
+			<longitude_e6 data="114370002"/>
+		</city>
+		<city>
+			<name data="呼和浩特"/>
+			<latitude_e6 data="40819999"/>
+			<longitude_e6 data="111680000"/>
+		</city>
+		<city>
+			<name data="黄冈"/>
+			<latitude_e6 data="30620000"/>
+			<longitude_e6 data="114129997"/>
+		</city>
+		<city>
+			<name data="济南"/>
+			<latitude_e6 data="36680000"/>
+			<longitude_e6 data="116980003"/>
+		</city>
+		<city>
+			<name data="济宁"/>
+			<latitude_e6 data="36680000"/>
+			<longitude_e6 data="116980003"/>
+		</city>
+		<city>
+			<name data="金华"/>
+			<latitude_e6 data="29087677"/>
+			<longitude_e6 data="119545555"/>
+		</city>
+		<city>
+			<name data="昆明"/>
+			<latitude_e6 data="25020000"/>
+			<longitude_e6 data="102680000"/>
+		</city>
+		<city>
+			<name data="拉萨"/>
+			<latitude_e6 data="29657589"/>
+			<longitude_e6 data="91132050"/>
+		</city>
+		<city>
+			<name data="兰州"/>
+			<latitude_e6 data="36040000"/>
+			<longitude_e6 data="103879997"/>
+		</city>
+		<city>
+			<name data="南昌"/>
+			<latitude_e6 data="28600000"/>
+			<longitude_e6 data="115919998"/>
+		</city>
+		<city>
+			<name data="南充"/>
+			<latitude_e6 data="30799999"/>
+			<longitude_e6 data="106080001"/>
+		</city>
+		<city>
+			<name data="南京"/>
+			<latitude_e6 data="32000000"/>
+			<longitude_e6 data="118800003"/>
+		</city>
+		<city>
+			<name data="南宁"/>
+			<latitude_e6 data="22819999"/>
+			<longitude_e6 data="108349998"/>
+		</city>
+		<city>
+			<name data="南通"/>
+			<latitude_e6 data="32000000"/>
+			<longitude_e6 data="118800003"/>
+		</city>
+		<city>
+			<name data="南阳"/>
+			<latitude_e6 data="33029998"/>
+			<longitude_e6 data="112580001"/>
+		</city>
+		<city>
+			<name data="宁波"/>
+			<latitude_e6 data="30229999"/>
+			<longitude_e6 data="120169998"/>
+		</city>
+		<city>
+			<name data="青岛"/>
+			<latitude_e6 data="36069999"/>
+			<longitude_e6 data="120330001"/>
+		</city>
+		<city>
+			<name data="汕头"/>
+			<latitude_e6 data="23399999"/>
+			<longitude_e6 data="116680000"/>
+		</city>
+		<city>
+			<name data="商丘"/>
+			<latitude_e6 data="36119998"/>
+			<longitude_e6 data="114370002"/>
+		</city>
+		<city>
+			<name data="上海"/>
+			<latitude_e6 data="31399999"/>
+			<longitude_e6 data="121470001"/>
+		</city>
+		<city>
+			<name data="邵阳"/>
+			<latitude_e6 data="27229999"/>
+			<longitude_e6 data="111470001"/>
+		</city>
+		<city>
+			<name data="深圳"/>
+			<latitude_e6 data="22549999"/>
+			<longitude_e6 data="114099998"/>
+		</city>
+		<city>
+			<name data="沈阳"/>
+			<latitude_e6 data="41770000"/>
+			<longitude_e6 data="123430000"/>
+		</city>
+		<city>
+			<name data="石家庄"/>
+			<latitude_e6 data="38029998"/>
+			<longitude_e6 data="114419998"/>
+		</city>
+		<city>
+			<name data="苏州"/>
+			<latitude_e6 data="31311400"/>
+			<longitude_e6 data="120613400"/>
+		</city>
+		<city>
+			<name data="绍兴"/>
+			<latitude_e6 data="30007200"/>
+			<longitude_e6 data="120574900"/>
+		</city>
+		<city>
+			<name data="太原"/>
+			<latitude_e6 data="37779998"/>
+			<longitude_e6 data="112550003"/>
+		</city>
+		<city>
+			<name data="唐山"/>
+			<latitude_e6 data="39669998"/>
+			<longitude_e6 data="118150001"/>
+		</city>
+		<city>
+			<name data="天津"/>
+			<latitude_e6 data="39099998"/>
+			<longitude_e6 data="117169998"/>
+		</city>
+		<city>
+			<name data="潍坊"/>
+			<latitude_e6 data="36700000"/>
+			<longitude_e6 data="119080001"/>
+		</city>
+		<city>
+			<name data="温州"/>
+			<latitude_e6 data="30229999"/>
+			<longitude_e6 data="120169998"/>
+		</city>
+		<city>
+			<name data="乌鲁木齐"/>
+			<latitude_e6 data="43779998"/>
+			<longitude_e6 data="87620002"/>
+		</city>
+		<city>
+			<name data="武汉"/>
+			<latitude_e6 data="30620000"/>
+			<longitude_e6 data="114129997"/>
+		</city>
+		<city>
+			<name data="西安"/>
+			<latitude_e6 data="34299999"/>
+			<longitude_e6 data="108930000"/>
+		</city>
+		<city>
+			<name data="西宁"/>
+			<latitude_e6 data="36619998"/>
+			<longitude_e6 data="101769996"/>
+		</city>
+		<city>
+			<name data="厦门"/>
+			<latitude_e6 data="24479999"/>
+			<longitude_e6 data="118080001"/>
+		</city>
+		<city>
+			<name data="信阳"/>
+			<latitude_e6 data="32130001"/>
+			<longitude_e6 data="114050003"/>
+		</city>
+		<city>
+			<name data="徐州"/>
+			<latitude_e6 data="34279998"/>
+			<longitude_e6 data="117150001"/>
+		</city>
+		<city>
+			<name data="盐城"/>
+			<latitude_e6 data="34279998"/>
+			<longitude_e6 data="117150001"/>
+		</city>
+		<city>
+			<name data="宜宾"/>
+			<latitude_e6 data="28799999"/>
+			<longitude_e6 data="104599998"/>
+		</city>
+		<city>
+			<name data="银川"/>
+			<latitude_e6 data="38479999"/>
+			<longitude_e6 data="106220001"/>
+		</city>
+		<city>
+			<name data="郑州"/>
+			<latitude_e6 data="34720001"/>
+			<longitude_e6 data="113650001"/>
+		</city>
+		<city>
+			<name data="重庆"/>
+			<latitude_e6 data="29520000"/>
+			<longitude_e6 data="106480003"/>
+		</city>
+		<city>
+			<name data="周口"/>
+			<latitude_e6 data="33000000"/>
+			<longitude_e6 data="114019996"/>
+		</city>
+		<city>
+			<name data="驻马店"/>
+			<latitude_e6 data="33000000"/>
+			<longitude_e6 data="114019996"/>
+		</city>
+	</cities>
+</xml_api_reply>

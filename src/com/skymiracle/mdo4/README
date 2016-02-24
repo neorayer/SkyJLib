@@ -1,0 +1,19 @@
+
+jsDNA
+ |
+JSP <---------------+
+Strut				|
+				Domain(Dao)
+					|
+DaoService()  <-----+
+	|
+	+--> DaoStorage() 
+		<-- RdbmsDaoStorage <==> DataBase Server
+				<-- SQLTools
+		<-- LdapDaoStorage  <==> Directory Server
+		<-- XmlDaoStorage   <==> XML File
+		
+	
+
+
+
