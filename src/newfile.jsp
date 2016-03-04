@@ -5,6 +5,7 @@
 <style type="text/css">
 </style>
 
+
 <h2>U are going to import bill data</h2>
 BatchID: <c:out value="${batch.batchId}" /> <br/>
 账单类型: <c:out value="${batch.billName}" /><br/>
