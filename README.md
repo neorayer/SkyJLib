@@ -1,5 +1,5 @@
 # SkyJLib
-SkyJLib was the core javascript library for Skymiracle(R) commercial software products.
+SkyJLib was the core java library for Skymiracle(R) commercial software products.
 The total solutions for :
 
 - Domain Model Design 
